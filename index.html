@@ -1393,17 +1393,27 @@
     @media(max-width:600px) {
       .type-grid { grid-template-columns: repeat(2, 1fr); }
       .analytics-grid { grid-template-columns: 1fr; }
-      .dashboard-nav { flex-wrap: wrap; height: auto; padding: 10px 1rem; border-radius: 12px; }
-      .nav-tabs { overflow-x: auto; white-space: nowrap; padding-bottom: 5px; width: 100%; justify-content: flex-start; }
+      .dashboard-nav { flex-wrap: wrap; height: auto; padding: 10px 1rem; border-radius: 12px; justify-content: space-between; gap: 0; }
+      .logo { order: 1; margin-bottom: 5px; }
+      .nav-profile { order: 2; margin-bottom: 5px; margin-left: auto; }
+      .nav-tabs { order: 3; overflow-x: auto; white-space: nowrap; padding-bottom: 8px; width: 100%; justify-content: flex-start; margin: 10px 0 0 0; }
+      .nav-tab { flex: 0 0 auto; }
       .nav-tabs::-webkit-scrollbar { display: none; }
-      .gen-left, .gen-right { padding: 1.5rem 1rem; }
+      .gen-left, .gen-right { padding: 1.5rem 1rem; width: 100%; box-sizing: border-box; overflow: hidden; }
       .form-row { grid-template-columns: 1fr; }
-      .lp-features { grid-template-columns: 1fr; }
+      .lp-features { grid-template-columns: 1fr; gap: 1rem; box-sizing: border-box; padding: 0 1rem; }
       .lp-section-title { font-size: 2rem; }
-      .qr-preview-box { padding: 1.5rem; border-radius: 20px; }
-      .qr-canvas-wrap { width: 100%; }
+      .qr-preview-box { padding: 1.5rem; border-radius: 20px; width: 100%; box-sizing: border-box; max-width: 100vw; min-width: unset; }
+      .qr-canvas-wrap { width: 100%; min-width: unset; display: flex; justify-content: center; overflow: hidden; }
       .scanner-box { width: 100%; max-width: 320px; }
       .stats-row { grid-template-columns: 1fr; }
+      .custom-section { padding: 1rem; box-sizing: border-box; }
+      .auth-card { padding: 2rem 1.5rem; max-width: calc(100vw - 2rem); box-sizing: border-box; margin: 0 auto; }
+      .history-wrap, .analytics-wrap { padding: 1rem; box-sizing: border-box; width: 100%; overflow: hidden; }
+      .qr-item { flex-direction: column; align-items: flex-start; }
+      .qr-actions { width: 100%; justify-content: flex-end; margin-top: 10px; }
+      .device-row { grid-template-columns: 1fr; }
+      .pie-wrap { flex-direction: column; align-items: flex-start; }
     }
 
     /* DEMO MODAL */
